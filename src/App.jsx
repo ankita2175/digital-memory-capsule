@@ -99,8 +99,7 @@ const dominantMood =
       />
       {/*Glow background effects*/}
       <motion.div
-        className="absolute top-[-150px] left-[-150px] w-[600px] h-[600px] bg-purple-500 opacity-40 blur-[150px] rounded-full"
-        animate={{
+        className="absolute top-[-100px] left-[-100px] w-[300px] h-[300px] lg:w-[600px] lg:h-[600px] bg-purple-500 opacity-40 blur-[150px] rounded-full"        animate={{
           x: [0, 50, 0],
           y: [0, 30, 0],
         }}
@@ -115,7 +114,7 @@ const dominantMood =
       <div className="absolute top-[-200px] right-[-100px] w-[600px] bg-blue-500 opacity-40 blur-[150px] rounded-full"></div>
 
         {/*Hero section*/}
-      <section className="flex fle-col items-center justify-center gap-32 h-screen text-center px-6">
+      <section className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-32 min-h-screen text-center px-6">
 
         {/*Left content*/}
         <div className="absolute w-[400px] h-[400px] bg-purple-500 opacity-20 blur-[120px] rounded-full"></div>
@@ -125,7 +124,7 @@ const dominantMood =
           animate = {{ opacity: 1, x: 0}}
           transition= {{ duration: 1}}
         >
-          <h1 className="text-7xl lg:text-9xl font-bold leading-none">
+          <h1 className="text-5xl sm:text-6xl lg:text-9xl font-bold leading-none">
             Digital <br />
             Memory<br />
             Capsule
@@ -134,7 +133,7 @@ const dominantMood =
 
         {/*Right content*/}
         <motion.div 
-          className="max-w-lg mt-16 lg:mt-0 text-center lg: text-left bg-white/10 backdrop-blur-xl border border-white/10 rounded-3xl p-10 shadow-2xl"
+          className="w-full max-w-lg mt-8 lg:mt-0 text-center lg:text-left bg-white/10 backdrop-blur-xl border border-white/10 rounded-3xl p-6 sm:p-10 shadow-2xl"
           initial={{ opacity:0, y:80 }}
           animate={{ opacity:1, y:0 }}
           transition={{ duration:1 , delay: 0.4}}
@@ -167,8 +166,7 @@ const dominantMood =
         onClick={() => setShowForm(true)}
         whileHover= {{scale:1.1}}
         whileTap={{ scale:0.95}}
-        className="fixed bottom-8 right-8 bg-purple-500 hover:bg-purple-400 text-white w-16 h-16 rounded-full text-4xl shadow-[0_0_40px_rgba(168,85,247,0.6)] flex items-center justify-center z-50 transition-all"
-      >+</motion.button>
+        className="fixed bottom-6 right-6 bg-purple-500 hover:bg-purple-400 text-white w-14 h-14 sm:w-16 sm:h-16 rounded-full text-3xl sm:text-4xl shadow-[0_0_40px_rgba(168,85,247,0.6)] flex items-center justify-center z-50 transition-all"      >+</motion.button>
     </div>
   );
 }
